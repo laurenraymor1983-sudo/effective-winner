@@ -1,4 +1,4 @@
-// @ts-check
+Add-ADComputerServiceAccountAdd-ADComputerServiceAccountAdd-ADComputerServiceAccountAdd-ComputerAdd-Computer// @ts-check
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 const copyPlugin = require('copy-webpack-plugin');
