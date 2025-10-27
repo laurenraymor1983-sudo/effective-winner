@@ -17,8 +17,6 @@
             "name": "Launch Extension",
             "type": "extensionHost",
             "request": "launch",
-            "runtimeExecutable": "${execPath}",
-            "autoAttachChildProcesses": true,
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
@@ -32,7 +30,6 @@
             "name": "Launch Extension Edge Watch",
             "type": "extensionHost",
             "request": "launch",
-            "runtimeExecutable": "${execPath}",
             "autoAttachChildProcesses": true,
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
@@ -42,22 +39,21 @@
                 "${workspaceFolder}/out/**/*.js"
             ],
             "preLaunchTask": "npm: build-edge-watch"
-        },
-        {
-            "name": "Launch Extension Without Build",
-            "type": "extensionHost",
-            "request": "launch",
-            "runtimeExecutable": "${execPath}",
-            "autoAttachChildProcesses": true,
-            "args": [
-                "--extensionDevelopmentPath=${workspaceFolder}"
-            ],
-            "sourceMaps": true,
-            "outFiles": [
-                "${workspaceFolder}/out/**/*.js"
-            ],
-        },
-        {
+    },
+    {
+        "name": "Launch Extension Without Build",
+        "type": "extensionHost",
+        "request": "launch",
+        "autoAttachChildProcesses": true,
+        "args": [
+            "--extensionDevelopmentPath=${workspaceFolder}"
+        ],
+        "sourceMaps": true,
+        "outFiles": [
+            "${workspaceFolder}/out/**/*.js"
+        ]
+    },
+    {
             "name": "Launch Tests",
             "type": "node",
             "request": "launch",
@@ -73,8 +69,7 @@
             "console": "internalConsole",
             "env": {
                 "NODE_ENV": "test"
-            },
-            "smartStep": false
+            }
         }
     ]
 }
