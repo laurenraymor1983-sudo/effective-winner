@@ -7,6 +7,11 @@
             "request": "attach"
         },
         {
+            "name": "PowerShell Attach to Host Process",
+            "type": "PowerShell",
+            "request": "attach"
+        },
+        {
             "name": "PowerShell Launch Current File",
             "type": "PowerShell",
             "request": "launch",
